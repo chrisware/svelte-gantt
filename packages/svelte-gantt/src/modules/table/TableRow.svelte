@@ -52,9 +52,7 @@
                     </div>
                 {/if}
 
-                {#if row.model.headerHtml}
-                    {@html row.model.headerHtml}
-                {:else if header.renderer}
+                {#if header.renderer}
                     {@html header.renderer(row)}
                 {:else if header.type === 'resourceInfo'}
                     <img class="sg-resource-image" src={row.model.imageSrc} alt="" />
