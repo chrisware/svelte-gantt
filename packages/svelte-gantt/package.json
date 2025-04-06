@@ -5,7 +5,7 @@
     "author": "Ante Novokmet <ante.je.zakon@gmail.com>",
     "type": "module",
     "scripts": {
-        "build": "rollup -c && cp ./dist/* ../../../roadrunner-svelte/svelte-gantt",
+        "build": "rollup -c && cp ./dist/index.js ../../../roadrunner-svelte/svelte-gantt.index.js &&  cp ./dist/index.js.map ../../../roadrunner-svelte/svelte-gantt.index.js.map",
         "autobuild": "rollup -c -w",
         "demo:dev": "cd demo && npm run dev",
         "dev": "run-p autobuild demo:dev",
